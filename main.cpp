@@ -1,29 +1,40 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-   int n=0, a=1, b=1, c;
-   cin >> n;
+int fibo(int n){
 
-   cout << a << endl;
-   cout << b << endl;
+    int i;
+    int a=1, b=1, c;
 
-    for(int i=2; i<n; i++)
-    {
-        c = a+b;
+    std::cout << a << std::endl;
+    std::cout << b << std::endl;
 
-         if(c<n)
-         {
-              cout << c << endl;
-         }
+    for(i=2; i<n; i++){
 
-         else
-         {
-               return 0;
-         }
+        c=a+b;
+
+        if(c<n){
+
+            std::cout << c << std::endl;
+
+
+        }else {
+
+            return 0;
+
+        }
 
         a=b;
         b=c;
     }
-   
+}
+
+int main() {
+
+    int n=0;
+    std::cin >> n;
+
+    int x= fibo(n);
+    std::cout << x << std::endl;
+
+    return 0;
 }
