@@ -34,7 +34,7 @@ int main() {
     std::cin >> n;
 
     int x= fibo(n);
-    std::cout << x << std::endl;
+    std::cout << n << std::endl;
 
     return 0;
 }
